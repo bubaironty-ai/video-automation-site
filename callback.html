@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Login code</title>
+<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:48px auto;padding:0 16px;line-height:1.6}code{word-break:break-all;background:#eee;padding:4px}</style></head>
+<body><h1>Login complete</h1><p id="o">Reading...</p>
+<script>var p=new URLSearchParams(location.search);var c=p.get("code");
+document.getElementById("o").innerHTML=c?"Code: <code id='c'></code>":"No code found. "+(p.get("error")||"");
+if(c)document.getElementById("c").textContent=c;</script></body></html>
